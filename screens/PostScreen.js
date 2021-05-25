@@ -4,8 +4,8 @@ import { View, Text, Button, StyleSheet } from "react-native";
 const PostScreen = ({ navigation }) => {
   return (
     <View style={StyleSheet.container}>
-      <Text>Post Screen</Text>
-      <Button title="Click Here" onPress={() => alert("Button Clicked!")} />
+      <Text></Text>
+      <Text>Under Construction</Text>
     </View>
   );
 };

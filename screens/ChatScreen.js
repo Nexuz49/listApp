@@ -4,8 +4,11 @@ import { View, Text, Button, StyleSheet } from "react-native";
 const ChatScreen = ({ navigation }) => {
   return (
     <View style={StyleSheet.container}>
-      <Text>Chat Screen</Text>
-      <Button title="Click Here" onPress={() => alert("Button Clicked!")} />
+      <Text></Text>
+      <Text></Text>
+      <Text></Text>
+      <Text></Text>
+      <Button title="Please Don't Click Here" onPress={() => alert("You Shouldn't have!")} />
     </View>
   );
 };

@@ -37,7 +37,7 @@ const FindScreen = ({ navigation }) => {
         }
     }, [])
 
-
+    // Fetch mockdata for list
     const fetchPosts = () => {
         const apiURL = 'https://jsonplaceholder.typicode.com/posts';
         fetch(apiURL)

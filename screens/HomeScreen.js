@@ -1,37 +1,51 @@
 import React from "react";
 import { View, Text, Button, StyleSheet, TextInput, alert } from "react-native";
 //import { useForm, useController } from "react-hook-form";
+import { Formik } from "formik";
+import { color } from "react-native-reanimated";
 
-let render = 0;
-
-const HomeScreen = () => {
-  return (
-    <View style={StyleSheet.container}>
-      <Text></Text>
-      <Button title="Click Here" onPress={() => alert("Button Clicked!")} />
-      <View>
-        <Text>TEST</Text>
-        <Text style={{textAlignVertical: "center",textAlign: "center",}}>Hiiiz</Text>
+const HomeScreen = (props) => (
+  <Formik
+    initialValues={{ email: "" }}
+    onSubmit={(values) => console.log(values)}
+  >
+    {({ handleChange, handleBlur, handleSubmit, values }) => (
+      <View style={styles.formInput}>
+        <Text>Welcome!</Text>
+        <Text>This is the List App</Text>
+        <TextInput
+          style={styles.inputArea}
+          onChangeText={handleChange("email")}
+          onBlur={handleBlur("email")}
+          value={values.email}
+        />
+        <Button onPress={handleSubmit} title="Submit" />
       </View>
-      <View>
-        
-      </View>
-    </View>
-  );
-};
-
+    )}
+  </Formik>
+);
 
 export default HomeScreen;
 
 const styles = StyleSheet.create({
-    container:  {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: '#8fcbbc',
-        marginTop: 15,
-    },
-    button: {
-      
-    }
+  container: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "#8fcbbc",
+    marginTop: 15,
+  },
+  formInput: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  inputArea: {
+    borderColor: "black",
+    borderWidth: 1,
+    borderStyle: "solid",
+    borderRadius: 1,
+    margin: 5,
+    width: "50%",
+  },
 });
