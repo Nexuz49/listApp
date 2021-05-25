@@ -18,6 +18,7 @@ const HomeScreen = (props) => (
           onChangeText={handleChange("email")}
           onBlur={handleBlur("email")}
           value={values.email}
+          placeholder={"email..."}
         />
         <Button onPress={handleSubmit} title="Submit" />
       </View>
