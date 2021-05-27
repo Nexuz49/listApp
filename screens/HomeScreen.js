@@ -11,8 +11,9 @@ const HomeScreen = (props) => (
   >
     {({ handleChange, handleBlur, handleSubmit, values }) => (
       <View style={styles.formInput}>
-        <Text>Welcome!</Text>
-        <Text>This is the List App</Text>
+        <Text style={{fontSize: 30, marginBottom: 10,}}>Welcome!</Text>
+        <Text style={{fontSize: 20, marginBottom: 20,}}>This is the List App (Beta Version)</Text>
+        <Text style={{fontSize: 13, marginBottom: 20, marginTop: 10,}}>Interested in Regular Updates? - Feel free to enter your email!</Text>
         <TextInput
           style={styles.inputArea}
           onChangeText={handleChange("email")}

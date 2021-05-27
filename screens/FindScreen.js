@@ -110,6 +110,7 @@ const FindScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
     container: {
         backgroundColor: 'white',
+        marginTop: 20,
     },
     itemStyle: {
         padding: 15
@@ -122,9 +123,6 @@ const styles = StyleSheet.create({
         borderColor: '#009688',
         backgroundColor: 'white'
     },
-    container: {
-        marginTop: 15,
-    }
 });
 
 
