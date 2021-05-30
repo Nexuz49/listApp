@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, FlatList, Modal,
   TouchableWithoutFeedback, Keyboard } from 'react-native';
- import { globalStyles } from '../styles/global';
- import { MaterialIcons } from '@expo/vector-icons';
- import Card from '../shared/card';
-import ReviewForm from '../components/reviewForm';
+import { globalStyles } from '../styles/global';
+import { MaterialIcons } from '@expo/vector-icons';
+import Card from '../shared/card';
+import ReviewForm from './reviewForm';
 
 export default function Home({ navigation }) {
   const [modalOpen, setModalOpen] = useState(false);
