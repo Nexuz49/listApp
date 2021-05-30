@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, TouchableOpacity, FlatList, Modal,
   TouchableWithoutFeedback, Keyboard } from 'react-native';
- import { globalStyles } from '../styles/global';
- import { MaterialIcons } from '@expo/vector-icons';
- import Card from '../shared/card';
+import { globalStyles } from '../styles/global';
+import { MaterialIcons } from '@expo/vector-icons';
+import Card from '../shared/card';
 import ReviewForm from '../components/reviewForm';
+
 
 export default function Home({ navigation }) {
   const [modalOpen, setModalOpen] = useState(false);
   const [reviews, setReviews] = useState([
-    { title: 'Zelda, Breath of Fresh Air', rating: 5, body: 'lorem ipsum', key: '1' },
-    { title: 'Gotta Catch Them All (again)', rating: 4, body: 'lorem ipsum', key: '2' },
-    { title: 'Not So "Final" Fantasy', rating: 3, body: 'lorem ipsum', key: '3' },
+    { title: 'Prince of Persia, Sands of Time', rating: 5, body: 'lorem ipsum', key: '1' },
+    { title: 'God of War 3', rating: 4, body: 'lorem ipsum', key: '2' },
+    { title: 'Call of Duty: Modern Warfare 2 MP', rating: 3, body: 'lorem ipsum', key: '3' },
   ]);
 
   const addReview = (review) => {
