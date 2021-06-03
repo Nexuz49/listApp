@@ -7,6 +7,7 @@ import FindScreen from "../screens/FindScreen";
 import ChatScreen from "../screens/ChatScreen";
 import PostScreen from "../screens/PostScreen";
 import SettingsScreen from "../screens/SettingsScreen";
+import reviewDetails from "../components/reviewDetails";
 
 const Tab = createBottomTabNavigator();
 
